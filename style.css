@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Comic Neue', cursive;
+  min-height: 100vh;
+
+}
+
+#root {
+  min-height: 100vh;
+}
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  height: 4em;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: tomato;
+  color: white;
+  padding: 0em 2em;
+}
+
+.footer {
+  height: 3em;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: tomato;
+  color: gray;
+  padding: 0em 2em;
+  margin-top: auto;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3em 3em;
+  /* padding: 1em; */
+  gap: 1em;
+  padding: 1em;
+}
+
+.form__topText, .form__bottomText {
+  text-indent: .5em;
+}
+
+.form__topText {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.form__bottomText {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.form__button {
+  grid-column: 1/-1;
+  grid-row: 2;
+  cursor: pointer;
+  border: none;
+}
+
+.meme {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+  text-align: center;
+}
+
+.meme__topText, .meme__bottomText {
+  color: white;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  font-size: 3rem;
+  text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.meme__topText {
+  top: 0;
+}
+
+.meme__bottomText {
+  bottom: 0;
+}
