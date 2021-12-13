@@ -109,3 +109,25 @@ img {
 .meme__bottomText {
   bottom: 0;
 }
+
+@media (max-width: 500px) {
+  .form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3em 3em 3em;
+  }
+
+  .form__topText {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .form__bottomText {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .form__button {
+    grid-column: 1;
+    grid-row: 3;
+  }
+}
